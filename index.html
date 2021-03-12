@@ -5,10 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
-	<!--FONTS-->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#000000">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-	<!---->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,13 +22,17 @@
 		<div class="page-width">
 			<div class="header__wrapper">
 				<img class="header__logo" src="img/logo.png" alt="Logo">
-				<ul class="header__nav">
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Newsletter</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Community</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Shop</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Contact US</a></li>
-				</ul>
-				<button class="header__hamburger" title="Open menu"><svg class="header__hamburger-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button>
+				<nav class="header__nav">
+					<a class="header__nav-link" href="#">Newsletter</a>
+					<a class="header__nav-link" href="#">Community</a>
+					<a class="header__nav-link" href="#">Shop</a>
+					<a class="header__nav-link" href="#">Contact US</a>
+				</nav>
+				<button class="header__hamburger hamburger__button" title="Open menu">
+					<svg class="header__hamburger-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+					</svg>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -40,51 +50,72 @@
 			</div>
 		</section>
 		<section class="create">
-			<div class="page-width">
-				<div class="create__article">
+			<div class="page-width tab">
+				<div class="create__article accordion">
 					<h1 class="create__title">HOW TO PROGRESS?</h1>
 					<p class="create__text">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-					<div class="create__nav">
-						<a class="create__nav-link create__nav-link--active" href="#">pizza cartoon</a>
-						<a class="create__nav-link" href="#">Burger</a>
-						<a class="create__nav-link" href="#">sandwich</a>
-						<a class="create__nav-link" href="#">LOREMISPSUM</a>
+					<div class="create__accordion-button accordion__button">
+						<p class="create__accordion-button-text accordion__button-text">pizza cartoon</p>
+						<p class="create__accordion-button-icon accordion__button-icon">
+							<svg class="create__accordion-button-icon-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+							</svg>
+						</p>
+					</div>
+					<div class="create__tab-buttons accordion__wrapper">
+						<div class="create__tab-buttons-wrapper">
+							<a class="create__tab-button tab__button tab__button--active" href="#">pizza cartoon</a>
+							<a class="create__tab-button tab__button" href="#">Burger</a>
+							<a class="create__tab-button tab__button" href="#">sandwich</a>
+							<a class="create__tab-button tab__button" href="#">LOREMISPSUM</a>
+						</div>
 					</div>
 				</div>
-				<div class="create__cards">
-					<div class="create__cards-wrapper">
-						<div class="create__card">
-							<div class="create__card-header">
-								<p class="create__card-number">1</p>
-								<img class="create__card-img" src="img/create-img1.png" alt="Icon">
+				<div class="create__tabs">
+					<div class="create__tab-item tab__item tab__item--active">
+						<div class="create__tab-cards">
+							<div class="create__tab-card">
+								<div class="create__tab-card-header">
+									<p class="create__tab-card-number">1</p>
+									<img class="create__tab-card-img" src="img/create-img1.png" alt="Icon">
+								</div>
+								<div class="create__tab-card-article">
+									<h1 class="create__tab-card-title">CREATE IT</h1>
+									<p class="create__tab-card-text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+								</div>
 							</div>
-							<div class="create__card-article">
-								<h1 class="create__card-title">CREATE IT</h1>
-								<p class="create__card-text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+							<div class="create__tab-card">
+								<div class="create__tab-card-header">
+									<p class="create__tab-card-number">2</p>
+									<img class="create__tab-card-img" src="img/create-img2.png" alt="Icon">
+								</div>
+								<div class="create__tab-card-article">
+									<h1 class="create__tab-card-title">NAME IT</h1>
+									<p class="create__tab-card-text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+								</div>
+							</div>
+							<div class="create__tab-card">
+								<div class="create__tab-card-header">
+									<p class="create__tab-card-number">3</p>
+									<img class="create__tab-card-img" src="img/create-img3.png" alt="Icon">
+								</div>
+								<div class="create__tab-card-article">
+									<h1 class="create__tab-card-title">FAME IT</h1>
+									<p class="create__tab-card-text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+								</div>
 							</div>
 						</div>
-						<div class="create__card">
-							<div class="create__card-header">
-								<p class="create__card-number">2</p>
-								<img class="create__card-img" src="img/create-img2.png" alt="Icon">
-							</div>
-							<div class="create__card-article">
-								<h1 class="create__card-title">NAME IT</h1>
-								<p class="create__card-text">Choose from a selection of tastilicious toppings to create your own pizza</p>
-							</div>
-						</div>
-						<div class="create__card">
-							<div class="create__card-header">
-								<p class="create__card-number">3</p>
-								<img class="create__card-img" src="img/create-img3.png" alt="Icon">
-							</div>
-							<div class="create__card-article">
-								<h1 class="create__card-title">FAME IT</h1>
-								<p class="create__card-text">Choose from a selection of tastilicious toppings to create your own pizza</p>
-							</div>
-						</div>
-										</div>
 					</div>
+					<div class="create__tab-item tab__item">
+						<p class="create__tab-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos obcaecati accusantium nemo libero commodi voluptatibus. Voluptates similique quod alias cumque, sed odio asperiores incidunt quasi eveniet beatae voluptatibus. Enim ratione sequi quisquam quaerat earum debitis nihil est? Minima, similique autem. Similique, doloremque perspiciatis? Accusantium perferendis modi odit officia atque quos repudiandae totam aperiam voluptatibus accusamus voluptate delectus magnam est sed, officiis fuga porro repellat? Dolor molestiae fugit voluptatem at officiis eveniet saepe commodi perferendis, quia, vitae magnam dicta nostrum deserunt dolores id aliquid suscipit perspiciatis maiores veniam cum. Placeat repudiandae provident, harum voluptatem natus distinctio tenetur ducimus dolores maiores.</p>
+					</div>
+					<div class="create__tab-item tab__item">
+						<p class="create__tab-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos obcaecati accusantium nemo libero commodi voluptatibus. Voluptates similique quod alias cumque, sed odio asperiores incidunt quasi eveniet beatae voluptatibus. Enim ratione sequi quisquam quaerat earum debitis nihil est? Minima, similique autem. Similique, doloremque perspiciatis? Accusantium perferendis modi odit officia atque quos repudiandae totam aperiam voluptatibus accusamus voluptate delectus magnam est sed, officiis fuga porro repellat? Dolor molestiae fugit voluptatem at officiis eveniet saepe commodi perferendis, quia, vitae magnam dicta nostrum deserunt dolores id aliquid suscipit perspiciatis maiores veniam cum. Placeat repudiandae provident, harum voluptatem natus distinctio tenetur ducimus dolores maiores.</p>
+					</div>
+					<div class="create__tab-item tab__item">
+						<p class="create__tab-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos obcaecati accusantium nemo libero commodi voluptatibus. Voluptates similique quod alias cumque, sed odio asperiores incidunt quasi eveniet beatae voluptatibus. Enim ratione sequi quisquam quaerat earum debitis nihil est? Minima, similique autem. Similique, doloremque perspiciatis? Accusantium perferendis modi odit officia atque quos repudiandae totam aperiam voluptatibus accusamus voluptate delectus magnam est sed, officiis fuga porro repellat? Dolor molestiae fugit voluptatem at officiis eveniet saepe commodi perferendis, quia, vitae magnam dicta nostrum deserunt dolores id aliquid suscipit perspiciatis maiores veniam cum. Placeat repudiandae provident, harum voluptatem natus distinctio tenetur ducimus dolores maiores.</p>
+					</div>
+				</div>
 				<div class="create__button-container">
 					<a class="create__button" href="#">CREATE YOUR LEGEND</a>
 				</div>
@@ -93,20 +124,19 @@
 	</main>
 	<footer class="footer" id="contact">
 		<div class="page-width">
-			<p class="footer__text">© 2020 Graphic Resources . All rights reserved. </p>
+			<p class="footer__text">© 2020 Graphic Resources. All rights reserved. </p>
 		</div>
 	</footer>
 	<div class="hamburger">
-		<div class="hamburger__menu">
-			<ul class="hamburger__nav">
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Newsletter</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Community</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Shop</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Contact US</a></li>
-			</ul>
+		<div class="hamburger__wrapper">
+			<nav class="hamburger__nav">
+				<a class="hamburger__nav-link" href="#">Newsletter</a>
+				<a class="hamburger__nav-link" href="#">Community</a>
+				<a class="hamburger__nav-link" href="#">Shop</a>
+				<a class="hamburger__nav-link" href="#">Contact US</a>
+			</nav>
 		</div>
 	</div>
-	<script src="script/main.js"></script>
-	<script src="script/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 	<title>404 Not Found</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -15,13 +15,16 @@
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#000000">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header">
 		<div class="page-width">
 			<div class="header__wrapper">
-				<a class="header__logo" href="/" aria-label="Homepage"><img class="header__logo-img" src="img/logo.png" alt="Logo"></a>
+				<a class="header__logo" href="/" aria-label="Homepage">
+					<img class="header__logo-img" src="img/logo.png" alt="Logo">
+				</a>
 				<nav class="header__nav">
 					<a class="header__nav-link" href="#">Newsletter</a>
 					<a class="header__nav-link" href="#">Community</a>
@@ -38,8 +41,9 @@
 	</header>
 	<section class="error-404">
 		<div class="page-width">
-			<div class="error-404__article">
-				<h2 class="error-404__title"><span class="error-404__number">404</span><br>Not Found</h2>
+			<div class="error-404__wrapper">
+				<p class="error-404__number">404</p>
+				<h2 class="error-404__title">Not Found</h2>
 				<p class="error-404__text">The requested page was not found on our server. It doesn't exist or it may have been removed.</p>
 			</div>
 		</div>
@@ -59,6 +63,5 @@
 			</nav>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
 </body>
 </html>
